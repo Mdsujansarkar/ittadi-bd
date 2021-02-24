@@ -14,7 +14,7 @@
                 <li class="has-children">
                     <a href=""><i class="fa fa-dashboard"></i> <span>{{ __('Category') }}</span> <i class="fa fa-angle-right arrow"></i></a>
                     <ul class="child-nav">
-                        <li><a href="index.html"><i class="fa fa-bolt"></i> <span>Layout 1</span></a></li>
+                        <li><a href="{{ route('category.index') }}"><i class="fa fa-bolt"></i> <span>{{ __('New Category') }}</span></a></li>
                         <li><a href="dashboard-2.html"><i class="fa fa-bookmark"></i> <span>Layout 2</span></a></li>
                         <li><a href="dashboard-full-width.html"><i class="fa fa-dashboard"></i> <span>Layout 3</span></a></li>
                     </ul>

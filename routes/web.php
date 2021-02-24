@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\Backend\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +17,6 @@ use App\Http\Controllers\PostController;
 Route::get('/', function () {
     return view('backend.dashboard.dashboard');
 });
+
+
+Route::get('categories',[CategoryController::class,'index'])->name('category.index');
